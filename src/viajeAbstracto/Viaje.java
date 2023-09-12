@@ -17,9 +17,6 @@ public abstract class Viaje {
         this.cantMaxPasajeros = cantMaxPasajeros;
     }
 
-    public Viaje(char origen2, char destino2, double distancia2, int cantEstaciones2, int cantVagones2,
-            int cantMaxPasajeros2) {
-    }
 
     abstract public double tiempoDemora();
   
