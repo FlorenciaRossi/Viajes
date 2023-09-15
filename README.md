@@ -1,18 +1,21 @@
-## Getting Started
+## Ejercicio Tipos de Viajes
+Una empresa ferroviaria administra viajes en tren entre dos estaciones terminales de su red.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Folder Structure
+Un viaje tiene asociado un **trayecto** (desde una estación terminal de origen a una de destino, con una distancia determinada y una cantidad de estaciones), una cierta **cantidad de vagones** y una **capacidad máxima de pasajeros**.
 
-The workspace contains two folders by default, where:
+También posee qué tipo de viaje corresponde en relación a sus características técnicas, si es un viaje con tecnología diesel, si es eléctrico o si es de alta velocidad (esto es independiente del trayecto recorrido).
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+**Viaje diesel:** El tiempo de demora promedio -en minutos- es la distancia en kilómetros multiplicada por la cantidad de estaciones dividido 2 sumada a la cantidad de estaciones y de pasajeros dividido 10.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+**Viaje eléctrico:** El tiempo de demora promedio -en minutos- es la distancia en kilómetros multiplicada por la cantidad de estaciones dividido 2. 
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+**Viaje de alta velocidad:** El tiempo de demora promedio -en minutos-es la distancia en kilómetros dividido 10. 
 
-## Dependency Management
+Definir dentro de la clase Viaje el método tiempoDeDemora, que retorne la cantidad de minutos que tarda en efectuar su recorrido, can las siguientes variantes:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+a)      Especializando la clase Viaje en función del tipo de viaje.
+
+b)      Sin especializar la clase Viaje, relacionándola con la clase TipoDeViaje, que está especializada por cada tipo de viaje.
+
+

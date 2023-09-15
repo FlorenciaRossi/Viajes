@@ -1,7 +1,5 @@
 package viajesEspecializados;
 
-import viajeAbstracto.Viaje;
-
 public class AltaVelocidad extends Viaje{
 
     public AltaVelocidad(String origen, String destino, double distancia, int cantEstaciones, int cantVagones, int cantMaxPasajeros) {

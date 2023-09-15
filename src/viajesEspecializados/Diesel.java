@@ -1,7 +1,5 @@
 package viajesEspecializados;
 
-import viajeAbstracto.Viaje;
-
 public class Diesel extends Viaje {
 
     
@@ -11,7 +9,7 @@ public class Diesel extends Viaje {
 
     @Override
     public double tiempoDemora() {
-        double tiempo =  ( ( (this.distancia * this.cantEstaciones)/2 ) + (this.cantEstaciones  + cantMaxPasajeros)/10.0 );
+        double tiempo =  ( ( (this.distancia * this.cantEstaciones)/2 ) + (this.cantEstaciones  + this.cantMaxPasajeros)/10.0 );
         return tiempo;
     }
     
